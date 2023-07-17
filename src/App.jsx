@@ -3,15 +3,15 @@ import {
     QueryClientProvider,
 } from '@tanstack/react-query';
 
+import ThemeSelector from './components/Theme/selector.jsx';
+
 
 const queryClient = new QueryClient();
 
 function App() {
     return (
         <QueryClientProvider client={queryClient}>
-            <h1 className="">
-                Hello world!
-            </h1>
+            <ThemeSelector />
         </QueryClientProvider>
     );
 }

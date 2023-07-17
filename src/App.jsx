@@ -11,7 +11,7 @@ const queryClient = new QueryClient();
 function App() {
     return (
         <QueryClientProvider client={queryClient}>
-            <ThemeSelector />
+            <h1 className='font-roboto'>React Query Demo</h1>
         </QueryClientProvider>
     );
 }
